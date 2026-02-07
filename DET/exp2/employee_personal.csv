@@ -1,0 +1,22 @@
+Employee_ID,Name,Department,Age,Gender,Email,Phone
+101,Rahul Sharma,IT,28,M,rahul@email.com,9876543210
+102,Priya Singh,HR,32,F,priya@email.com,9876543211
+103,Amit Kumar,Finance,35,M,,9876543212
+104,Sneha Patel,IT,29,F,sneha@email.com,
+105,Vikram Reddy,Sales,40,M,vikram@email.com,9876543214
+106,Anjali Gupta,HR,,F,anjali@email.com,9876543215
+107,Rajesh Nair,Finance,38,M,rajesh@email.com,9876543216
+108,Meera Iyer,IT,26,F,meera@email.com,9876543217
+109,Suresh Menon,Sales,45,M,,9876543218
+110,Divya Krishnan,Marketing,30,F,divya@email.com,9876543219
+111,Arun Pillai,IT,33,M,arun@email.com,9876543220
+112,Kavitha Rajan,HR,36,F,kavitha@email.com,
+113,Mohan Das,Finance,,M,mohan@email.com,9876543222
+114,Lakshmi Nair,Sales,31,F,lakshmi@email.com,9876543223
+115,Ganesh Kumar,IT,27,M,ganesh@email.com,9876543224
+101,Rahul Sharma,IT,28,M,rahul@email.com,9876543210
+116,Pooja Sharma,Marketing,34,F,,9876543225
+117,Karthik Iyer,Finance,42,M,karthik@email.com,9876543226
+118,Swathi Reddy,HR,29,F,swathi@email.com,9876543227
+119,Naveen Kumar,Sales,,M,naveen@email.com,9876543228
+120,Deepa Menon,IT,31,F,deepa@email.com,9876543229
