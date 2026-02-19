@@ -1,10 +1,10 @@
 from typing import List, Tuple, Dict
 
-def h(a: Tuple[int, int], b: Tuple[int, int]) -> int:
+def h(a: Tuple[int, int], b: Tuple[int, int]):
 	return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
 
-def neighbors(p: Tuple[int, int], grid: List[List[int]]) -> List[Tuple[int, int]]:
+def neighbors(p: Tuple[int, int], grid: List[List[int]]):
 	x, y = p
 	opts = [(x - 1, y), (x + 1, y), (x, y - 1), (x, y + 1)]
 	res = []
@@ -15,7 +15,7 @@ def neighbors(p: Tuple[int, int], grid: List[List[int]]) -> List[Tuple[int, int]
 	return res
 
 
-def astar(grid: List[List[int]], start: Tuple[int, int], goal: Tuple[int, int]) -> List[Tuple[int, int]]:
+def astar(grid: List[List[int]], start: Tuple[int, int], goal: Tuple[int, int]):
 	open_list = [start]
 	came_from: Dict[Tuple[int, int], Tuple[int, int]] = {}
 

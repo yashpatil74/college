@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stack>
 using namespace std;
 
 class Node {
@@ -77,12 +78,46 @@ class Graph {
                 }
             }
         }
+
+        void DFSNonRecursive(int start) {
+            stack<int> s;
+            s.push(start);
+            visited[start] = 1;
+
+            while(!s.empty()) {
+                int v = s.top();
+                s.pop();
+                cout << v << " ";
+
+                for(Node* temp = head[v]->next; temp != NULL; temp = temp->next) {
+                    if(visited[temp->vertex] == 0) {
+                        visited[temp->vertex] = 1;
+                        s.push(temp->vertex);
+                    }
+                }
+            }
+        }
+
+        void DFSNonRecursiveTraversal() {
+            for(int i = 0; i < n; i++) {
+                visited[i] = 0;
+            }
+            for(int i = 0; i < n; i++) {
+                if(visited[i] == 0) {
+                    DFSNonRecursive(i);
+                }
+            }
+        }
 };
 
 int main() {
     Graph g;
     g.Create();
-    cout << "DFS Traversal: ";
+    cout << "DFS Traversal (Recursive): ";
     g.DFSTraversal();
+    cout << "\n";
+    cout << "DFS Traversal (Non-Recursive): ";
+    g.DFSNonRecursiveTraversal();
+    cout << "\n";
     return 0;
 }

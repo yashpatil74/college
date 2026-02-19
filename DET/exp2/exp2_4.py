@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
+import matplotlib as mplot
 
 print("Loading dataset")
 df = pd.read_csv('patient_health.csv')
